@@ -14,7 +14,7 @@ export function RoomViewer({
 }) {
   return (
     <aside
-      className="absolute max-w-5xl text-lg top-0 right-0 max-w-xl p-4 bg-slate-600 text-white rounded m-4"
+      className="absolute max-w-5xl text-lg top-0 right-0 max-w-xl p-4 bg-slate-600 text-white rounded m-4 z-30"
       style={{ top: `${mousePosition.y}px`, left: `${mousePosition.x}px` }}
     >
       <header>
