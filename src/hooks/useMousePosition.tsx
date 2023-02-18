@@ -1,11 +1,16 @@
-import React from "react";
+// https://www.joshwcomeau.com/snippets/react-hooks/use-mouse-position/
+import React, { useEffect } from "react";
 
 export const useMousePosition = () => {
-  const [mousePosition, setMousePosition] = React.useState({
+  const [mousePosition, setMousePosition] = React.useState<{
+    x: number;
+    y: number;
+  }>({
     x: 0,
     y: 0,
   });
-  React.useEffect(() => {
+
+  useEffect(() => {
     const updateMousePosition = (ev: { clientX: number; clientY: number }) => {
       setMousePosition({ x: ev.clientX, y: ev.clientY });
     };
@@ -14,5 +19,6 @@ export const useMousePosition = () => {
       window.removeEventListener("mousemove", updateMousePosition);
     };
   }, []);
+
   return mousePosition;
 };
