@@ -1,21 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 import dungeonMap from "./assets/map.png";
+import { RoomViewer } from "./components/RoomViewer/RoomViewer";
+import { rooms } from "./content/rooms";
+import { useMousePosition } from "./hooks/useMousePosition";
 
 function App() {
+  const mousePosition = useMousePosition();
+  const [currentRoom, setCurrentRoom] = useState<number>(0);
+  const [showRoomInfo, setShowRoomInfo] = useState<boolean>(false);
   return (
     <main>
       <h1>MegaDungeon</h1>
-      <img src={dungeonMap} alt="Dungeon map, generated with donjon" />
-      <aside className="absolute max-w-5xl text-lg top-0 right-0">
-        <header>
-          <h2>Room Name</h2>
-        </header>
-        <div>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur
-          tempora, veniam. Ea nemo numquam officia totam. Ad hic illum iure
-          minus nemo officia quam, quis sit soluta ullam vitae voluptas?
-        </div>
-      </aside>
+      {JSON.stringify(mousePosition)}
+      <figure>
+        <img
+          src={dungeonMap}
+          alt="Dungeon map, generated with donjon"
+          onMouseEnter={() => {
+            setShowRoomInfo(true);
+          }}
+          onMouseLeave={() => {
+            setShowRoomInfo(false);
+          }}
+        />
+      </figure>
+      {showRoomInfo && (
+        <RoomViewer
+          mousePosition={mousePosition}
+          roomData={rooms[currentRoom]}
+        />
+      )}
     </main>
   );
 }
