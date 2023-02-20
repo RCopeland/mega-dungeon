@@ -5,9 +5,11 @@ import { Position } from "../../App";
 export function DraggableToken({
   color,
   defaultPosition,
+  mousePosition,
 }: {
   color: string;
   defaultPosition: Position;
+  mousePosition: Position;
 }) {
   return (
     <Draggable
