@@ -6,9 +6,13 @@ TODO
 - [x] set up a token you can drag around
 - [ ] store token location
 - [ ] make the tokens position relative (responsive)
+- [ ] have the room descriptions be in a fixed panel instead
 - [ ] write the adventure
 - [ ] write the room content
 - [ ] style the room info component (maybe a set position instead of following the cursor?)
+- [ ] place monsters
+- [ ] wandering monsters table
+- [ ] rooms
 
 ## Adventure Scenario
 
@@ -42,6 +46,25 @@ by a dozen [Gelatinous Cubes](https://oldschoolessentials.necroticgnome.com/srd/
   A month ago, something happened that lured the cubes away from their station, living beings infiltrated 
 the complex. The cubes, on instinct, opt to pursue the fresh meat rather than subsist on trash.
 
-// TODO: what infiltrated the complex?
+A local wizard hired another group of adventures to enter the complex and to retrieve the mechanical heart of a Gnomish automaton.
+The party entered the complex and discovered that the automaton survives and has been building lesser automatons. The party attepted 
+to slay the automaton, but failed. They discovered that they were also unable to leave due to the mechanical locks. They've been stuck 
+inside for around a month, trying to survive.
+
+The party has set traps and barricaded a room for them to hide in.
+
+Wandering Monster List:
+
+#### Wandering Monsters
+
+| d6   | Encounter              |
+|------|------------------------|
+| 1-2  | NPC Party (or Empty)   |
+| 3    | Clockwork cavalier d4  |
+| 4    | Copper Cobra d6        |
+| 5    | Gelatinous Cube        |
+| 6    | Gelatinous Cube (Dead) |
+
+
 
 </details>

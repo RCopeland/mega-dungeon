@@ -9,3 +9,8 @@
 body {
   margin: 0;
 }
+
+.main-layout {
+  max-width: 2500px;
+  margin: 0 auto;
+}

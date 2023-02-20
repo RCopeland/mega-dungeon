@@ -37,7 +37,7 @@ const roomCoords = [
 ];
 
 export const rooms = {
-  name: "mega-dungeon",
+  name: "the-scrape",
   areas: roomDescriptions.map((room, index) => {
     return {
       id: room.name.toLowerCase().replace(" ", "-"),

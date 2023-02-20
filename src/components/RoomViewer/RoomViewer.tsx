@@ -7,20 +7,36 @@ export interface RoomData {
 
 export function RoomViewer({
   roomData,
-  mousePosition,
+  closeRoom,
 }: {
-  roomData: RoomData;
-  mousePosition: { x: number; y: number };
+  roomData: RoomData | null;
+  closeRoom: () => void;
 }) {
   return (
-    <aside
-      className="absolute max-w-5xl text-lg top-0 right-0 max-w-xl p-4 bg-slate-600 text-white rounded m-4 z-30"
-      style={{ top: `${mousePosition.y}px`, left: `${mousePosition.x}px` }}
-    >
-      <header>
-        <h2 className="font-bold text-xl mb-2">{roomData.name}</h2>
-      </header>
-      <p>{roomData.description}</p>
+    <aside className="fixed 2xl:static top-0 left-0 w-full 2xl:w-auto z-30 text-lg text-white p-6">
+      <div className="bg-slate-600 p-4 max-w-5xl mx-auto rounded shadow-2xl">
+        {roomData ? (
+          <>
+            <header className="flex items-center mb-2 justify-between">
+              <h2 className="font-bold text-xl">{roomData.name}</h2>
+              <button className="2xl:hidden" onClick={() => closeRoom()}>
+                Close
+              </button>
+            </header>
+            <p>{roomData.description}</p>
+          </>
+        ) : (
+          <>
+            <header>
+              <h2 className="font-bold text-xl mb-2">Room Viewer</h2>
+              <button className="2xl:hidden" onClick={() => closeRoom()}>
+                Close
+              </button>
+            </header>
+            <p>Select a Room</p>
+          </>
+        )}
+      </div>
     </aside>
   );
 }

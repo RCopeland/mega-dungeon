@@ -5,11 +5,9 @@ import { Position } from "../../App";
 export function DraggableToken({
   color,
   defaultPosition,
-  mousePosition,
 }: {
-  color?: string;
+  color: string;
   defaultPosition: Position;
-  mousePosition: Position;
 }) {
   return (
     <Draggable
@@ -21,7 +19,7 @@ export function DraggableToken({
       }}
     >
       <button
-        className={`absolute bg-pink-600 rounded-3xl p-6 z-20 top-0 left-0 ${color}`}
+        className={`relative rounded-3xl p-6 z-20 ${color}`}
         role="button"
       />
     </Draggable>
