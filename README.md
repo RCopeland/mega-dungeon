@@ -6,13 +6,16 @@ TODO
 - [x] set up a token you can drag around
 - [ ] store token location
 - [ ] make the tokens position relative (responsive)
-- [ ] have the room descriptions be in a fixed panel instead
+- [x] have the room descriptions be in a fixed panel instead
 - [ ] write the adventure
 - [ ] write the room content
-- [ ] style the room info component (maybe a set position instead of following the cursor?)
-- [ ] place monsters
-- [ ] wandering monsters table
-- [ ] rooms
+- [x] style the room info component (maybe a set position instead of following the cursor?)
+- [x] place monsters
+- [x] wandering monsters table
+- [ ] fix weird layout issues
+- [ ] fix responsive issues 
+- [x] get cool art for the background
+- [x] get cool font for the logo
 
 ## Adventure Scenario
 
