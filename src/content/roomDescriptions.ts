@@ -42,13 +42,23 @@ export const roomDescriptions = [
   },
   {
     name: "5. Lavatory 01",
-    readAloudText: "",
-    description: "Falling Blocks",
+    readAloudText:
+      "Entering the room, you see small segmented rooms, each with a kind of half door. The small rooms are each 5 " +
+      "sqft. and the doors are all closed. The floor is covered in a smooth and polished tile.",
+    description:
+      "Opening one of the doors may cause it to fall over (2-in-6, no damage, but the noise acts like an Alarm). " +
+      "Once a door is open, the party can see a white bowl with a seat mounted above it.",
   },
   {
     name: "6. Maintenance",
-    readAloudText: "",
-    description: "Teleport",
+    readAloudText:
+      "This room is lined with shelves, each with bins and tools. Along the W wall, there are a few hangers each with " +
+      "some kind of suit (small size). The suits are yellow and made from a strange material. There is also " +
+      "a cylindrical chamber with a glass door. Inside the chamber is a panel with a red button.",
+    description:
+      "The suits in this room can be worn over the armor of small size PCs. If worn, the Gelatinous Cube will not" +
+      "attempt to attack the wearer. If the button in the chamber is pushed, who or whatever is inside the chamber is immediately" +
+      "covered in a blue light and teleported to a matching chamber in room 10.",
   },
   {
     name: "7. Collection",
@@ -68,7 +78,7 @@ export const roomDescriptions = [
   {
     name: "10. Warehouse",
     readAloudText: "",
-    description: "Animated Object",
+    description: "Animated Object / Teleport chamber to room 6",
   },
   {
     name: "11. Lab",
