@@ -2,6 +2,7 @@ import React from "react";
 
 export interface RoomData {
   name: string;
+  readAloudText: string;
   description: string;
 }
 
@@ -23,7 +24,8 @@ export function RoomViewer({
                 Close
               </button>
             </header>
-            <p>{roomData.description}</p>
+            <p className="bg-slate-800 p-4">{roomData.readAloudText}</p>
+            <p className="p-4">{roomData.description}</p>
           </>
         ) : (
           <>

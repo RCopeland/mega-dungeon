@@ -1,77 +1,96 @@
 export const roomDescriptions = [
   {
     name: "Room 1",
+    readAloudText: "",
     description: "Empty",
   },
   {
     name: "Room 2",
+    readAloudText: "",
     description: "Trapdoor leading to a hidden area",
   },
   {
     name: "Room 3",
+    readAloudText:
+      "Entering the complex, you can see a large room, with stone walls, ceilings and floors.",
     description: "Copper Cobra x 4",
   },
   {
     name: "Room 4",
+    readAloudText: "",
     description: "Falling Block Trap",
   },
   {
     name: "Room 5",
+    readAloudText: "",
     description: "Falling Blocks",
   },
   {
     name: "Room 6",
+    readAloudText: "",
     description: "Teleport",
   },
   {
     name: "Room 7",
-    description: "Copper Cobra x 6",
+    readAloudText: "",
+    description: "Gelatinous Cube",
   },
   {
     name: "Room 8",
+    readAloudText: "",
     description: "Poison Gas Trap",
   },
   {
     name: "Room 9",
-    description: "Empty",
+    readAloudText: "",
+    description: "Copper Cobra x 6",
   },
   {
     name: "Room 10",
+    readAloudText: "",
     description: "Animated Object",
   },
   {
     name: "Room 11",
+    readAloudText: "",
     description: "Copper Cobra x 4",
   },
   {
     name: "Room 12",
-    description: "Strange Waters",
+    readAloudText: "",
+    description:
+      "The room contains a stone fountain containing clear water. Drinking even a small amount grants 1d4 healing once per character per day.",
   },
   {
     name: "Room 13",
+    readAloudText: "",
     description: "Mist trap",
   },
   {
     name: "Room 14",
+    readAloudText: "",
     description: "Empty",
   },
   {
     name: "Room 15",
+    readAloudText: "",
     description: "Alarm",
   },
   {
     name: "Room 16",
-    description: "Empty",
+    readAloudText: "",
+    description:
+      "In this room, a group of adventurers have made a camp. Several bedrolls are rolled out and some ration containers are strewn about.",
   },
   {
     name: "Room 17",
-    description: "Strange Waters",
+    readAloudText: "",
+    description:
+      "The room contains a stone fountain containing black, stinking liquid. Drinking it means a Save v Poison, touching it does 1d4 damage.",
   },
   {
     name: "Room 18",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin feugiat turpis non urna fermentum mollis. Sed mollis mattis lacus, sit amet facilisis diam fringilla in. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur neque dolor, sodales sed elit nec, gravida tempor ex. Sed id magna luctus, blandit sapien vitae, viverra dui. Proin et diam finibus ipsum tristique iaculis. Aliquam erat volutpat. Pellentesque ut sapien justo. Nam sit amet dapibus nibh. Nulla sodales turpis quis ipsum feugiat posuere. Nam elementum nunc leo. Vivamus rhoncus consequat augue, ut congue justo congue rhoncus.\n" +
-      "\n" +
-      "Maecenas dapibus commodo arcu, vitae efficitur nisi porta ac. Proin at nibh eleifend, dignissim urna quis, luctus felis. Cras suscipit congue ligula in varius. Donec ac consectetur orci. Donec condimentum aliquet vehicula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi eget nulla massa. In maximus eu quam sit amet bibendum. Vivamus blandit magna non eleifend porttitor. Etiam sit amet venenatis ex. Fusce in orci suscipit, aliquet massa rutrum, varius ex. Mauris lacinia mauris et leo lobortis, vel malesuada neque lacinia. Integer auctor ornare tortor, ac lobortis ante. Proin finibus neque a dapibus viverra.",
+    readAloudText: "",
+    description: "Empty",
   },
 ];

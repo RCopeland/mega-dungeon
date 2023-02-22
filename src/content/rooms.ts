@@ -4,6 +4,7 @@ export interface RoomData {
   id: string;
   title: string;
   name: string;
+  readAloudText: string;
   description: string;
   shape: string;
   fillColor: string;
@@ -44,6 +45,7 @@ export const rooms = {
       title: room.name,
       name: room.name,
       description: room.description,
+      readAloudText: room.readAloudText,
       shape,
       fillColor,
       strokeColor,
