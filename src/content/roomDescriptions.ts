@@ -5,8 +5,8 @@ export const roomDescriptions = [
       "Long wooden workbenches line the walls, covered in dozens of half-finished projects. Several " +
       "strange, specific tools are hanging from the wall on hooks.",
     description:
-      "Nothing of value in this room, but investigation could reveal an employee handbook that mentions lock controls " +
-      "in the Boss' Office.",
+      "Investigation could reveal an employee handbook that mentions lockdown with the override being in the Boss' Office. The " +
+      "desks contain 600sp",
   },
   {
     name: "2. Office 01",
@@ -58,54 +58,75 @@ export const roomDescriptions = [
     description:
       "The suits in this room can be worn over the armor of small size PCs. If worn, the Gelatinous Cube will not" +
       "attempt to attack the wearer. If the button in the chamber is pushed, who or whatever is inside the chamber is immediately" +
-      "covered in a blue light and teleported to a matching chamber in room 10.",
+      "covered in a blue light and teleported to a matching chamber in room 10. In one of the suits, 3gp, 100sp is in the pocket.",
   },
   {
     name: "7. Collection",
-    readAloudText: "",
-    description: "Gelatinous Cube",
+    readAloudText:
+      "This room is almost entirely filled with trash. You can see a few gaps filled with light, which tells you that it opens to " +
+      "the outside. You can see a narrow path around the edges of the room, where the trash is shallow enough to walk over.",
+    description:
+      "This room contains the last remaining Gelatinous Cube that is performing its function. In the SE corner, the cube " +
+      "quietly eats away at the trash. If any living organism gets close enough, it will attack.",
   },
   {
     name: "8. Rear Collection",
-    readAloudText: "",
-    description: "Poison Gas Trap",
+    readAloudText:
+      "This room is impassible as trash has completely blocked the doors and filled the room.",
+    description:
+      "If the party is somehow able to gain entry, a poisonous gas cloud escapes.",
   },
   {
     name: "9. South Collection",
-    readAloudText: "",
-    description: "Copper Cobra x 6",
+    readAloudText:
+      "This room is partially filled with trash already, and you can see more and more falling in from above. Looking up, you " +
+      "can see that a metal chute feeds to an adjacent room and the trash is sliding down from it to this one.",
+    description:
+      "This room serves as an overflow for trash and is usually empty. Sitting here amongst the trash are 6 Copper Cobras, endlessly cleaning.",
   },
   {
     name: "10. Warehouse",
-    readAloudText: "",
-    description: "Animated Object / Teleport chamber to room 6",
+    readAloudText:
+      "You see several rows of empty shelves. There is also a glass doored chamber containing a panel with a red button.",
+    description:
+      "This room was previously storage for the Gnome builders. They did not leave much in the way of supplies behind, but there are a few shiny gears worth about 600sp. Pressing the red button teleports anything in the chamber to the matching chamber in room 6.",
   },
   {
     name: "11. Lab",
-    readAloudText: "",
-    description: "Copper Cobra x 4",
+    readAloudText:
+      "Sitting at a workbench is a humanoid figure. It works solemnly at a half built copper cobra. The room contains tools and instruments suitable for a Gnomish workshop.",
+    description:
+      "If left alone, the figure will continue to work, ignoring the PCs. If engaged in combat, it will fight and will also knock over a box containing 4 Copper Cobras. Inside the figure is a mechanical heart, which can be sold to a knowledgeable buyer for 1500gp.",
   },
   {
     name: "12. Cafeteria",
-    readAloudText: "",
+    readAloudText:
+      "This room contains rows of tables and chairs. It was clearly used for food service at one time, but has long since sat dormant. In the center of the room is a fountain with clear running water. " +
+      "Surrounding the basin are several pewter cups.",
     description:
-      "The room contains a stone fountain containing clear water. Drinking even a small amount grants 1d4 healing " +
-      "once per character per day.",
+      "Drinking even a small amount grants 1d4 healing, once per character, per day.",
   },
   {
     name: "13. Open Office",
-    readAloudText: "",
-    description: "Mist trap",
+    readAloudText:
+      "This room contains several desks and chairs. Each desk is covered in papers outlining a construction project.",
+    description:
+      "Opening one of the desk drawers in particular can trigger a Mist Trap.",
   },
   {
     name: "14. Sanitation",
-    readAloudText: "",
-    description: "Empty",
+    readAloudText:
+      "This room contains an odd chamber, where two of its walls are glass and the other two are stone. There are levers on both the inside and outside of the chamber. Mounted on the wall is a small case. The cover is made from glass. Inside are two dusty bottles, each with the label: [Drink If Injured].",
+    description:
+      "Empty, except for a shelf that has a few worthless items and 200sp. The mounted case contains 2 x Potion of Healing",
   },
   {
     name: "15. Sanitation",
-    readAloudText: "",
-    description: "Alarm",
+    readAloudText:
+      "This room holds several metal pipes, each connected to a metal turn knob. The floor is covered in stone tile.",
+    description:
+      "Turning any of the knobs lets water flow from the matching pipe. If any of the exit doors are opened while" +
+      "water is running, an alarm sounds.",
   },
   {
     name: "16. Lavatory 02",
@@ -118,13 +139,16 @@ export const roomDescriptions = [
   },
   {
     name: "17. Storage",
-    readAloudText: "",
+    readAloudText:
+      "Now mostly empty, this room was at one time storage for an individual person. In the ceiling, a pipe hangs down, broken. From the end of it is dripping black stinking liquid.",
     description:
-      "The room contains a stone fountain containing black, stinking liquid. Drinking it means a Save v Poison, touching it does 1d4 damage.",
+      "Drinking the liquid means a Save v Poison, touching it does 1d4 damage.",
   },
   {
     name: "18. Private Office",
-    readAloudText: "",
-    description: "Empty",
+    readAloudText:
+      "This room contains a single desk, expertly carved with ornamental figures depicting a taller gnome, standing on the backs of several other gnomes.",
+    description:
+      "In the unlocked desk drawers, is 100sp. Under the desk is a button that releases a side panel on the desk. Moving the panel reveals a button marked, [Lockdown Override].",
   },
 ];

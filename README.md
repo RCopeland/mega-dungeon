@@ -2,20 +2,14 @@
 
 TODO
 
-- [x] figure out some kind of image map for the rooms
-- [x] set up a token you can drag around
+- [ ] finish the adventure
+  - [ ] stat the NPC Party
+  - [ ] stat the monsters, show the stats
+  - [ ] find a magic item to put in the dungeon
 - [ ] store token location
 - [ ] make the tokens position relative (responsive)
-- [x] have the room descriptions be in a fixed panel instead
-- [ ] write the adventure
-- [ ] write the room content
-- [x] style the room info component (maybe a set position instead of following the cursor?)
-- [x] place monsters
-- [x] wandering monsters table
 - [ ] fix weird layout issues
 - [ ] fix responsive issues 
-- [x] get cool art for the background
-- [x] get cool font for the logo
 
 ## Adventure Scenario
 
