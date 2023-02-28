@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import ImageMapper from "react-img-mapper";
 import dungeonMap from "./assets/map.png";
+import art from "./assets/the-scrape.min.jpeg";
 import { RoomData, RoomViewer } from "./components/RoomViewer/RoomViewer";
 import { rooms } from "./content/rooms";
-import { useMousePosition } from "./hooks/useMousePosition";
 import { DraggableToken } from "./components/DraggableToken/DraggableToken";
 
 export interface Position {
@@ -12,17 +12,14 @@ export interface Position {
 }
 
 function App() {
-  const mousePosition = useMousePosition();
   const [currentRoom, setCurrentRoom] = useState<RoomData | null>(null);
-  const [showRoomViewer, setShowRoomViewer] = useState<boolean>(true);
+  const [showRoomViewer, setShowRoomViewer] = useState<boolean>(false);
 
   return (
-    <main className="relative w-screen flex flex-col 2xl:flex-row gap-4 max-w-screen-2xl m-auto my-4">
-      <figure className="bg-pink-500 m-auto">
+    <main className="relative w-full flex flex-col 2xl:flex-row gap-4 max-w-screen-2xl m-auto my-4 px-4">
+      <figure className="mx-auto">
         <ImageMapper
           map={rooms}
-          width={631}
-          height={811}
           src={dungeonMap}
           active={true}
           onClick={(e) => {
@@ -31,15 +28,22 @@ function App() {
             setShowRoomViewer(true);
           }}
           responsive
-          parentWidth={Math.min(window.innerWidth - 32, 1200)}
+          parentWidth={Math.min(800, window.innerWidth - 100)}
         />
       </figure>
-      <div className="m-4 relative">
+      <div className="mx-auto m-4 relative max-w-xl">
         <header className="mb-8">
-          <h1 className="font-bungee-shade font-bold text-6xl m-8">
+          <h1 className="font-bungee-shade font-bold text-2xl 2xl:text-6xl 2xl:my-8">
             The Scrape
           </h1>
+        </header>
+        {!showRoomViewer && (
           <div className="text-lg">
+            <img
+              className="rounded mb-8"
+              src={art}
+              alt="adventurers on a mound of trash"
+            />
             <p className="mb-4">
               Outside town, there is a massive pit called Tren&apos;tar, but
               locally, it&apos;s referred to as <strong>The Scrape</strong>.
@@ -53,22 +57,19 @@ function App() {
               In the last few weeks however, the pile has stopped shrinking.
             </p>
           </div>
-        </header>
-        <div className="mb-4 px-16">
+        )}
+        <div className="my-8">
           <DraggableToken
             color="bg-slate-300"
             defaultPosition={{ x: 0, y: 0 }}
-            mousePosition={mousePosition}
           />
           <DraggableToken
             defaultPosition={{ x: 25, y: 0 }}
             color="bg-slate-500"
-            mousePosition={mousePosition}
           />
           <DraggableToken
             defaultPosition={{ x: 50, y: 0 }}
             color="bg-slate-800"
-            mousePosition={mousePosition}
           />
         </div>
         {showRoomViewer && (

@@ -6,10 +6,9 @@ TODO
   - [ ] stat the NPC Party
   - [ ] stat the monsters, show the stats
   - [ ] find a magic item to put in the dungeon
-- [ ] store token location
-- [ ] make the tokens position relative (responsive)
 - [ ] fix weird layout issues
 - [ ] fix responsive issues 
+- [ ] room info transition effect
 
 ## Adventure Scenario
 

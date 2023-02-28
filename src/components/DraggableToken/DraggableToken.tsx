@@ -1,26 +1,25 @@
-import React from "react";
+import React, { useRef } from "react";
 import Draggable from "react-draggable";
 import { Position } from "../../App";
 
 export function DraggableToken({
   color,
   defaultPosition,
-  mousePosition,
 }: {
   color: string;
   defaultPosition: Position;
-  mousePosition: Position;
 }) {
+  const nodeRef = useRef(null);
+
   return (
     <Draggable
+      nodeRef={nodeRef}
       defaultPosition={defaultPosition}
       grid={[25, 25]}
       scale={1}
-      onStop={() => {
-        console.log("store position");
-      }}
     >
       <button
+        ref={nodeRef}
         className={`relative rounded-3xl p-6 z-20 ${color}`}
         role="button"
       />
