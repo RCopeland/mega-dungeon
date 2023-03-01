@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import ImageMapper from "react-img-mapper";
 import dungeonMap from "./assets/map.png";
 import art from "./assets/the-scrape.min.jpeg";
-import { RoomData, RoomViewer } from "./components/RoomViewer/RoomViewer";
+import { RoomViewer } from "./components/RoomViewer/RoomViewer";
 import { rooms } from "./content/rooms";
 import { DraggableToken } from "./components/DraggableToken/DraggableToken";
+import { RoomData } from "./content/roomDescriptions";
 
 export interface Position {
   x: number;

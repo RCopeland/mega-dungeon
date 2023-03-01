@@ -1,11 +1,8 @@
 import { roomDescriptions } from "./roomDescriptions";
 
-export interface RoomData {
+export interface Area {
   id: string;
   title: string;
-  name: string;
-  readAloudText: string;
-  description: string;
   shape: string;
   fillColor: string;
   strokeColor: string;
@@ -46,6 +43,7 @@ export const rooms = {
       name: room.name,
       description: room.description,
       readAloudText: room.readAloudText,
+      monsters: room.monsters,
       shape,
       fillColor,
       strokeColor,

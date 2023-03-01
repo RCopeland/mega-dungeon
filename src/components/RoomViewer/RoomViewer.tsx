@@ -1,9 +1,10 @@
 import React from "react";
+import { RoomData } from "../../content/roomDescriptions";
+import { StatBlock } from "../StatBlock/StatBlock";
+import { monsters } from "../../content/monsters";
 
-export interface RoomData {
-  name: string;
-  readAloudText: string;
-  description: string;
+function getMonsters(name: string) {
+  return monsters.find((monster) => monster.name === name);
 }
 
 export function RoomViewer({
@@ -32,6 +33,12 @@ export function RoomViewer({
             </header>
             <p className="bg-slate-800 p-4">{roomData.readAloudText}</p>
             <p className="p-4">{roomData.description}</p>
+            <div>
+              {roomData.monsters?.map((monster) => {
+                const monsterData = getMonsters(monster.name);
+                return monsterData ? <StatBlock data={monsterData} /> : <></>;
+              })}
+            </div>
           </>
         ) : (
           <>
