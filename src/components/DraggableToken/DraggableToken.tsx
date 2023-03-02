@@ -20,7 +20,7 @@ export function DraggableToken({
     >
       <button
         ref={nodeRef}
-        className={`relative rounded-3xl p-6 z-20 ${color}`}
+        className={`relative rounded-3xl p-4 z-20 ${color}`}
         role="button"
       />
     </Draggable>

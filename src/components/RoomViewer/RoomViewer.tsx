@@ -15,14 +15,8 @@ export function RoomViewer({
   closeRoom: () => void;
 }) {
   return (
-    <aside className="text-lg text-white">
-      <div
-        className="fixed top-0 left-0 z-30 opacity-80 bg-slate-400 w-screen h-screen 2xl:hidden"
-        onClick={() => {
-          closeRoom();
-        }}
-      />
-      <div className="fixed z-40 top-0 right-0 max-w-xl h-screen 2xl:h-auto 2xl:m-8 2xl:static bg-slate-600 p-4 max-w-5xl 2xl:mx-auto 2xl:rounded shadow-2xl">
+    <aside className="fixed lg:static lg:max-h-full left-8 top-8 bottom-8 right-8 z-40 text-lg text-white overflow-scroll rounded">
+      <div className="bg-slate-600 p-4 max-w-5xl">
         {roomData ? (
           <>
             <header className="flex items-center mb-2 justify-between">
